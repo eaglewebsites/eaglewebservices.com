@@ -7,25 +7,113 @@
 </head>
 
 <body>
-    <div class="text-red-500 text-3xl">
-        This is a test!!!!
-    </div>
-    <div>
-        <div x-data="{ open: false }">
-            <button @click="open = true">Open Dropdown</button>
 
-            <ul x-show="open" @click.away="open = false">
-                Dropdown Body
-            </ul>
+    <section class="bg-white shadow-xl fixed top-0 left-0 w-full z-40">
+        <div class="max-w-5xl mx-auto flex items-center justify-between py-2 px-4">
+            <a class="flex flex-row items-center cursor-pointer">
+                <img class="w-12 mr-2" src="https://image.flaticon.com/icons/svg/1497/1497675.svg" />
+                <span class="text-gray-800 hover:text-black">Eagle Web Services</span>
+            </a>
+            <div class="flex flex-row items-center">
+                <a class="mr-4 text-gray-800 hover:text-black cursor-pointer">
+                    Pricing
+                </a>
+                <a class="mr-4 text-gray-800 hover:text-black cursor-pointer">
+                    Our Work
+                </a>
+                <a class="block bg-blue-700 hover:bg-blue-600 rounded-full px-4 py-2 text-orange-100 cursor-pointer">
+                    Get Started
+                </a>
+            </div>
         </div>
-    </div>
-    <div x-data="{ tab: 'foo' }">
-        <button :class="{ 'active': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
-        <button :class="{ 'active': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
+    </section>
 
-        <div x-show="tab === 'foo'">Tab Foo</div>
-        <div x-show="tab === 'bar'">Tab Bar</div>
-    </div>
+    <section class="bg-white">
+        <div class="max-w-6xl mx-auto bg-center bg-cover"
+            style="height:40rem;background-image:url('https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80')">
+            <div class="max-w-5xl px-4 mx-auto" style="padding-top:15rem">
+                <div class="w-4/5 sm:w-4/5 md:w-3/5 lg:w-1/2">
+                    <h1 class="text-4xl text-black leading-none">Call to action and description with more stuff here
+                    </h1>
+                    <p class="text-black opacity-75 leading-snug mt-2 text-lg">
+                        Description of services. Lorem ipsum andother stuff goes here with lots of good textstuff and
+                        blah blah blah blha
+                    </p>
+                    <a
+                        class="inline-block bg-blue-700 hover:bg-blue-600 rounded-full px-4 py-2 text-orange-100 cursor-pointer mt-4">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="max-w-5xl mx-auto text-center pt-12 pb-8 text-3xl text-gray-900 p-4">
+            Some line of text that says something
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="max-w-5xl mx-auto flex flex-wrap">
+            <div class="w-full sm:w-full md:w-1/3 p-4 text-center">
+                <img class="w-1/4 mx-auto mb-4" src="https://image.flaticon.com/icons/svg/135/135644.svg" />
+                <span class="text-lg font-semibold text-gray-900">Do stuff with this title</span>
+                <p class="text-gray-700">Description of services. Lorem ipsum andother stuff goes here with lots of good
+                    textstuff and blah blah blah blha</p>
+            </div>
+            <div class="w-full sm:w-full md:w-1/3 p-4 text-center">
+                <img class="w-1/4 mx-auto mb-4" src="https://image.flaticon.com/icons/svg/1134/1134447.svg" />
+                <span class="text-lg font-semibold text-gray-900">Do stuff with this title</span>
+                <p class="text-gray-700">Description of services. Lorem ipsum andother stuff goes here with lots of good
+                    textstuff and blah blah blah blha</p>
+            </div>
+            <div class="w-full sm:w-full md:w-1/3 p-4 text-center">
+                <img class="w-1/4 mx-auto mb-4" src="https://image.flaticon.com/icons/svg/135/135659.svg" />
+                <span class="text-lg font-semibold text-gray-900">Do stuff with this title</span>
+                <p class="text-gray-700">Description of services. Lorem ipsum andother stuff goes here with lots of good
+                    textstuff and blah blah blah blha</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pt-6 pb-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <a
+                class="inline-block bg-red-700 hover:bg-red-600 rounded-full px-4 py-2 text-orange-100 cursor-pointer mt-4">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-5xl mx-auto flex flex-wrap">
+            <div class="w-full sm:w-full md:w-3/5">
+                Screenshot
+            </div>
+            <div class="w-full sm:w-full md:w-2/5">
+                Title
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-5xl mx-auto text-center">
+            center text
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-3xl mx-auto">
+            big background image thing
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-5xl mx-auto">
+            footer
+        </div>
+    </section>
 </body>
 
 </html>
