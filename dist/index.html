@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Eagle Web Services</title>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <script src="/js/bundle.js"></script>
+</head>
+
+<body>
+    <div class="text-red-500 text-3xl">
+        This is a test!!!!
+    </div>
+    <div>
+        <div x-data="{ open: false }">
+            <button @click="open = true">Open Dropdown</button>
+
+            <ul x-show="open" @click.away="open = false">
+                Dropdown Body
+            </ul>
+        </div>
+    </div>
+    <div x-data="{ tab: 'foo' }">
+        <button :class="{ 'active': tab === 'foo' }" @click="tab = 'foo'">Foo</button>
+        <button :class="{ 'active': tab === 'bar' }" @click="tab = 'bar'">Bar</button>
+
+        <div x-show="tab === 'foo'">Tab Foo</div>
+        <div x-show="tab === 'bar'">Tab Bar</div>
+    </div>
+</body>
+
+</html>
