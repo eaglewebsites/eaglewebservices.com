@@ -1,38 +1,40 @@
 {
   "name": "eaglewebservices.com",
   "version": "1.0.0",
-  "description": "Eagle Web Services Website",
-  "main": "",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "prod": "NODE_ENV=production webpack-dev-server --config webpack.config.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 70,
+    "tabWidth": 4
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eaglewebsites/eaglewebservices.com.git"
   },
+  "keywords": [],
   "author": "Garrett Bland",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eaglewebsites/eaglewebservices.com/issues"
   },
   "homepage": "https://github.com/eaglewebsites/eaglewebservices.com#readme",
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@fullhuman/postcss-purgecss": "^2.0.6",
-    "alpinejs": "^1.11.0",
-    "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.4.2",
-    "cssnano": "^4.1.10",
-    "mini-css-extract-plugin": "^0.9.0",
-    "postcss-loader": "^3.0.0",
-    "tailwindcss": "^1.2.0",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+  "dependencies": {
+    "@tailwindcss/ui": "^0.7.2",
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "tailwindcss": "^1.9.6"
+  }
 }

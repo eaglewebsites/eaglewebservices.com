@@ -1,12 +1,19 @@
 # Eagle Web Services
-Official website for eagle web services
 
-### Install packages
-```
-yarn install
+Eaglewebservices.com using next.js
+
+## Development
+
+```bash
+npm run build
 ```
 
-### Run locally on localhost:9000
+```bash
+npm run start
 ```
-yarn dev
+
+## Building for production
+
+```bash
+npm run start
 ```

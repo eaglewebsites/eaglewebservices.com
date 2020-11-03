@@ -1,5 +1,14 @@
-/node_modules
-/dist/css
-/dist/js
-.env
+# Mac
 .DS_Store
+
+# next.js build output
+.next
+
+# dotenv environment variables file
+.env
+
+# npm
+node_modules
+yarn.lock
+npm.lock
+yarn-error.log
