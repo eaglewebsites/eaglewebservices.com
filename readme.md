@@ -9,7 +9,7 @@ npm run build
 ```
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Building for production
