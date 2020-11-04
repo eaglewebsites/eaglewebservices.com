@@ -6,11 +6,6 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <meta charSet="utf-8" key="charSet" />
-                    <meta
-                        name="viewport"
-                        content="initial-scale=1.0, width=device-width"
-                        key="viewport"
-                    />
                     <link
                         rel="stylesheet"
                         href="https://rsms.me/inter/inter.css"
